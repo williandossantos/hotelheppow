@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{/*background-color: #f8f9fa;*/}
+.container{
+    width: 100%;max-width: 1200px;
+    margin: 0 auto;padding: 0 2%;}
+h2{font-family: "Noto Serif SC";font-size: 1.2rem;}
+
+p{font-family: "Poppins";}
+a{
+    color: black;font-family: "Poppins";
+    font-size: 14px;font-weight: 300;
+    text-decoration: none;
+}
+
+.btn{width: 100%;padding: 25px;text-align: center;}
+.btn button{
+    background-color: #9542f5;border: none;
+    cursor: pointer;color: #f5f5f5;
+    font-weight: bold;font-size: 1rem;
+    padding: 10px 15px;transition: 0.7s;
+}
+button:hover{background-color:#242225;}
+
+/*===========HEADER=========*/
+
+#topo {
+    background-image: url("../img/background-top.jpg");
+    background-repeat: no-repeat; 
+    height: 100%;
+    
+}
+#topo .display-top {
+    background-color: rgba(0, 0, 0, 0.288);
+    padding-top:40px;
+    height: 100%;
+    width:100%;
+}
+#topo .display-top > .container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+    
+}
+#topo .container > .brand > a{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500; 
+}
+.container details{display: none;}
+nav.menu{
+    display: flex;
+    gap: 40px;
+}
+nav.menu a{
+    color: white;
+}
+nav.menu a:hover{
+    color: #9542f5;
+}
+
+/*===========HEADER CONTAINER DOIS=========*/
+
+#topo .display-top > .container:last-child{
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+    height: calc(700px - 114px);
+}
+
+#topo .box-texto-top{
+    max-width: 430px;
+    margin-top: -70px;
+    color: white;
+}
+#topo .box-texto-top h2{
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 20px; 
+}
+#topo .box-texto-top p{
+    font-weight: 300;   
+}
+
+#topo .box-formulario-top{
+    align-self: center;
+}
+#topo .box-formulario-top > .formulario{
+    background-color: white;
+    border-radius: 5px;
+    width: 350px;
+    padding: 25px 50px;
+
+}
+#topo .formulario .form-wrap {
+    margin-bottom: 15px;
+    font-family: "Open Sans";
+}
+
+#topo .formulario .form-wrap label{
+    display: block;
+    padding: 10px 0;
+    
+}
+#topo .formulario .form-wrap input,
+#topo .formulario .form-wrap select{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: rgba(56, 56, 56, 0.815);
+    width: 100%;
+    padding: 15px 10px;
+    outline: none;
+    
+}
+#topo .formulario .form-wrap input[type='submit']{
+    background-color: #9542f5;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight:400;
+    transition:0.7s;
+}
+#topo .formulario .form-wrap input[type='submit']:hover{
+    background-color: #312e33;
+    
+}
+/*==========================================*/
+.formulario-checkin-mobile{display: none;}
+
+/*============BENEFICIOS===========*/
+#beneficios .container-beneficios{
+    width: 100%;
+    background-color: #8b8b9215;
+}
+.tags-beneficios{
+    background-color:#242225;
+    display: flex;
+   /* grid-template-columns:repeat(auto-fit, minmax(230px, auto));*/
+    justify-content: space-around;
+    text-align: center;
+}
+.tags-box{
+    width:33.33%;
+}
+.tags-box h2{
+    margin-bottom: 10px;
+}
+.tags-beneficios h2{
+   padding: 12px;
+   color: white;
+   font-size:1rem;
+   transition:0.7s;
+}
+.tags-beneficios h2:hover{
+    /*background-color:rgb(129, 23, 250);*/
+    background-color:#9542f5;
+    cursor: pointer;
+}
+.tags-value{
+    width: 100%;
+    max-width:1280px;
+    margin: 0 auto;
+    padding: 70px 4%;
+}
+.tags-value-box{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: none;
+}
+.tags-value .bad{
+    display: block;
+}
+
+.tags-value-box span{
+    background-image: url("../img/icons/bed.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-bottom: 20px;
+    height: 90px;
+    width: 90px;
+}
+.tags-value-box:nth-child(2) span{
+    background-image: url("../img/icons/refeicao.png");
+}
+.tags-value-box:nth-child(3) span{
+    background-image: url("../img/icons/academia.png");
+}
+.tags-value-box:nth-child(4) span{
+    background-image: url("../img/icons/recepcao.png");
+}
+.tags-value-box:nth-child(5) span{
+    background-image: url("../img/icons/sunset.png");
+}
+.tags-value-box:nth-child(6) span{
+    background-image: url("../img/icons/spa.png");
+}
+.tags-value-box:nth-child(7) span{
+    background-image: url("../img/icons/wifi.png");
+}
+.tags-value-box:nth-child(8) span{
+    background-image: url("../img/icons/balcao-de-bar.png");
+}
+.tags-value-box:nth-child(9) span{
+    background-image: url("../img/icons/piscina.png");
+}
+
+.tags-value-box h2{
+    font-size: 2.5rem;
+}
+.tags-value-box h3{
+    font-family: "Noto Serif SC";
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+.tags-value-box p{
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.tags-value-box button{
+    width: 150px;
+    background-color: #9542f5;
+    border: none;
+    cursor: pointer;
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 12px;
+    outline: none;
+    transition: 0.7s;
+}
+.tags-value-box button:hover{
+    background-color:#242225;
+}
+
+/*===============RESERVAS==============*/
+.reservas{
+    background-color: #8b8b9209;
+}
+.reservas-texto{
+    text-align: center;
+    padding: 80px 0;
+}
+.reservas-texto h2{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.reservas .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+.reservas .container .reservas-quartos{
+    max-width: 350px;
+    border: 1px solid #312e331a;
+}
+.reservas .container .box-quartos > img{
+    width: 100%;
+    height: 100%;
+}
+.reservas .container .box-quartos .quartos-titulo{
+    padding: 15px 12px;
+    text-align: center;
+}
+
+.box-quartos .quartos-texto p{
+    padding-left: 40px;
+    background-image: url("../img/icons/check.png");
+    background-position: 13px;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+}
+.reservas .container .box-quartos .btn{
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+.reservas .container .box-quartos .btn button{
+    background-color: #9542f5;
+    border: none;
+    cursor: pointer;
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: 0.7s;
+}
+.reservas .container .box-quartos .btn button:hover{
+    background-color:#242225;
+}
+
+/*==========SALA DE REUNIÃO=========*/
+#sala-reuniao {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/sala-reuniao.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#sala-reuniao .box{
+    width: 100%;
+    min-height: 580px;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+.sala-box-texto{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    transform: translateY(230px);
+}
+.sala-box-texto h2{
+    color: rgb(252, 252, 252);
+    text-align: center;
+    font-size: 3rem;
+}
+/*==============REESTAURANTE===============*/
+#restaurante{
+    padding: 0 2% 150px 2%;
+    background-color: #8b8b9218;
+}
+.restaurante-texto{
+    text-align: center;
+    padding: 60px 0;
+}
+.restaurante-texto h2{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+#restaurante .cardapio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 100px;
+    padding: 0 2%;
+}
+#restaurante .cardapio > div{
+    
+    padding: 15px 12px;
+    background-color: #312e33;
+    box-shadow: 4px 4px 10px #cdcdcf; 
+    color: white;
+    font-family: sans-serif;font-size: 1.1rem;
+    transition: 0.7s;
+}
+#restaurante .cardapio > div:hover{
+    background-color: #9d49fc;
+    cursor: pointer;
+}
+#restaurante .container{
+    padding: 0;
+    width: 100%;
+    display:grid;
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 500px));
+    justify-content: space-evenly;
+    gap:10px;
+}
+#restaurante .c-um{
+    display: grid;
+}
+.container .box .box-prato{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 4px 4px 10px #cdcdcf2f;
+    transition: 0.7s;
+}
+.container .box .box-prato:hover{
+    background-color: #7c37ca;
+    color: white;
+}
+.container .box .prato-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background: #000;
+}
+.c-um .box .prato-img{
+    background: #000;
+    background-image: url("../img/pastel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c-dois .box .prato-img{
+    background: #000;
+    background-image: url("../img/pudim.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.c-tres .box .prato-img{
+    background: #000;
+    background-image: url("../img/laranja.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container .box .prato-texto{
+    padding: 7px;
+}
+/*===============DEPOiMeNTOS=========*/
+#depoimentos{
+    padding-bottom: 100px;
+}
+.depoimentos-titulo h2{
+    text-align: center;
+    padding: 100px 0;
+    font-size: 2.0rem;
+    font-weight: 500;
+}
+#depoimentos .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    justify-content: space-between;
+    gap: 20px;
+}
+.depo-wrap{
+    box-shadow: 2px 2px 7px rgba(49, 46, 51, 0.39);
+}
+.depo-wrap-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-color: rgb(27, 27, 27);
+    background-image: url('../img/instagram/bg-01.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 30px auto;
+}
+.depo-wrap-texto{
+    padding: 0 4%;
+    text-align: center;
+}
+.depo-wrap-texto span{
+    font-size: 1rem;
+    color: #9542f5;
+    font-style: oblique;
+    padding: 30px 0;
+    display: block;
+}
+/*============INFORMAÇÕES RECENNTES===========*/
+#atividade-recentes{
+    background-color: #cdcdcf2c;
+    padding-bottom: 200px;
+}
+.atividade-titulo h2{
+    text-align: center;
+    padding: 100px 0;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #312e33;
+}
+#atividade-recentes .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    justify-content: center;
+    gap:30px;
+    
+}
+#atividade-recentes .atividade-wrap{
+    box-shadow:0 0 7px #cdcdcf;
+    max-width: 350px;
+    
+}
+.atividade-wrap .img-wrap{
+    width: 100%;
+    min-height: 330px;
+    background-color: #312e33;
+    background-image: url("../img/recentpost/post01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.atividade-wrap .second{
+    background-image: url("../img/recentpost/post02.jpg");
+}
+.atividade-wrap .last{
+    background-image: url("../img/recentpost/post03.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.texto-wrap{
+    padding: 20px 15px;
+    text-align: left;
+    color: #312e33;
+    font-size: 1rem;
+}
+.atividade-wrap p:hover{
+    color: #9542f5;
+    transition: 0.7s;
+}
+.atividade-wrap span{
+    display: block;
+    padding: 15px;
+    color:#f1f1f1 ;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    background-color: #9542f5;
+    text-align: right;
+}
+/*============INSSAAGGRAM===========*/
+.instagram-wrap {
+    width: 100%;
+    display: flex;
+    padding: 40px 0;
+}
+.instagram-titulo h2{
+    text-align: center;
+    padding: 40px 0;
+    color: #a563f1;
+}
+.instagram-wrap .box-img{
+    width: 100%;
+    min-height: 200px;
+    display: block;
+    background-image: url('../img/instagram/bg-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+.box-img:nth-child(2){
+    background-image: url('../img/instagram/bg-02.jpg');
+}
+.box-img:nth-child(3){
+    background-image: url('../img/instagram/bg-03.jpg');
+}
+.box-img:nth-child(4){
+    background-image: url('../img/instagram/bg-04.jpg');
+}
+.box-img:nth-child(5){
+    background-image: url('../img/instagram/bg-05.jpg');
+}
+.instagram .box-img:hover > .display{
+    display: block;
+}
+.instagram .box-img .display{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    display: none;  
+    text-align: center;
+    padding: 70px 0;
+}
+.instagram .box-img .display .img{
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icons/instagram.png");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+/*============FOOTER===========*/
+.rodape{
+    width: 100%;
+    height:100%;
+    background-color:#30336b;
+    padding: 50px 0;
+}
+.rodape .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    justify-content: center;
+    gap: 10px;
+}
+.container .box-rodape{
+    max-width:250px;
+}
+.container .box-rodape:nth-child(2) > p,
+.container .box-rodape:nth-child(3) > p,
+.container .box-rodape:nth-child(4) > p{
+    margin-bottom: 12px;
+}
+.container .box-rodape h3{
+    color: rgba(228, 228, 228, 0.884);
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 20px 0;
+}
+.box-rodape p{
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgba(228, 228, 228, 0.726)
+}
+.container .box-rodape:nth-child(4) input{
+    background-color: transparent;
+    border: 1px solid rgba(228, 228, 228, 0.726);
+    border-radius: 5px;
+    color: rgba(228, 228, 228, 0.726);
+    display: block;
+    padding: 15px 12px;
+    outline: none;
+    width: 100%;
+}
+.container .box-rodape:nth-child(4) input::placeholder{
+    color: rgba(228, 228, 228, 0.726);
+}
+.rodape  div:last-child{
+    
+    color:#ffffff;
+    font-size: .8rem;
+    font-family:"Poppins";
+    margin-top: 60px; 
+    text-align: center;
+}
+
+
+/*============MEDIA QUERY===========*/
+@media screen and (max-width:400px) {
+    .container .box .box-prato{
+        flex-wrap: wrap;
+    }
+    .container .box .prato-img{
+       margin: 10px auto;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .tags-beneficios{
+        flex-direction: column;
+    }
+    .tags-box{
+        width:70%;
+        text-align: left;
+        padding-left: 80px;
+    }
+    
+}
+
+@media screen and (max-width:767px){
+
+    /*============HEADER CONTAINER DOIS==============*/
+    #topo .box-texto-top{
+        max-width: 530px;
+        margin: 0 auto;
+        color: white;
+    }
+    .container:last-child .box-formulario-top{
+        display: none;
+    }
+    /*=============formulario-checkin-mobile==============*/
+
+    .formulario-checkin-mobile{
+        display:block;
+        align-self: center;
+    }
+    .formulario-checkin-mobile > .formulario{
+        background-color: white;
+        border-radius: 5px;
+        max-width:580px;
+        padding: 25px 20px;
+        margin: 0 auto;
+    
+    }
+    .formulario-checkin-mobile .formulario .form-wrap {
+        margin-bottom: 15px;
+        font-family: "Open Sans";
+    }
+    
+    .formulario-checkin-mobile .formulario .form-wrap label{
+        display: block;
+        padding: 10px 0;
+        
+    }
+    .formulario-checkin-mobile .formulario .form-wrap input,
+    .formulario-checkin-mobile .formulario .form-wrap select{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        color: rgba(56, 56, 56, 0.815);
+        width: 100%;
+        padding: 15px 10px;
+        outline: none;
+        
+    }
+    .formulario-checkin-mobile .formulario .form-wrap input[type='submit']{
+        background-color: #9542f5;
+        color: white;
+        font-size: 1rem;
+        font-weight:400;
+        cursor: pointer;
+    }
+    .formulario-checkin-mobile .formulario .form-wrap input[type='submit']:hover{
+        background-color: #312e33;
+    }
+    /*=============INSTAGRAM==============*/
+    
+    
+}
+@media screen and (max-width:840px) {
+    /*==========Restaurante==========*/
+    .container .box .box-prato{
+        max-width: 530px;
+        margin: 0 auto 20px auto;
+    }
+    
+}
+
+@media screen and (max-width:940px) {
+
+    /*============ Menu-Mobile=============*/
+    .container .menu{
+        display: none;
+    }
+    details.menu-mobile{
+        display: block;
+       
+    }
+    details.menu-mobile summary{
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/menu.png");
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-size: contain;
+        list-style: none;
+    }
+    details.menu-mobile .box-menu{
+        background-color: rgb(129, 74, 255);
+        padding: 10% 0 12% 0;
+        position: absolute;
+        width: 300px;
+        height: calc(100% + 40px);
+        left: 0;
+        top: 0;
+    }
+
+    details.menu-mobile .box-menu input{display: none;}
+    details.menu-mobile .box-menu a,
+    details.menu-mobile .box-menu label{
+        color: white;
+        display: block;
+        font-size: 1.3rem;
+        padding: 12px 0;
+        text-align: center;
+        transition:0.7s;
+    }
+    details.menu-mobile .box-menu a:hover{
+        background-color: rgb(91, 21, 255);
+    }
+    details.menu-mobile .box-menu label:hover{
+        background-color: rgb(66, 17, 182);
+    }
+    details.menu-mobile .box-menu label{
+        cursor: pointer;
+        font-family: "Open Sans";
+        
+    }
+    details.menu-mobile .submenu{
+        display: none;
+        background-color: #f8f8f8;
+        color: black;
+    }
+    details.menu-mobile .submenu a{
+        color: black;  
+        font-size: 1rem;
+        
+    }
+    details.menu-mobile .submenu a:hover{
+        color: white;
+    }
+    .trigger-input:checked + .submenu{
+        display: block;
+    }
+}
+@media  screen and (max-width:1070px) {
+    #restaurante .container{
+        grid-template-columns: repeat(auto-fit, minmax(auto, 390px));
+    }
+}

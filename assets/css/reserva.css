@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{/*background-color: #f8f9fa;*/}
+.container{
+    width: 100%;max-width: 1200px;
+    margin: 0 auto;padding: 0 2%;}
+h2{font-family: "Noto Serif SC";font-size: 1.2rem;}
+
+p{font-family: "Poppins";}
+a{
+    color: black;font-family: "Poppins";
+    font-size: 14px;font-weight: 300;
+    text-decoration: none;
+}
+
+.btn{width: 100%;padding: 25px;text-align: center;}
+.btn button{
+    background-color: #9542f5;border: none;
+    cursor: pointer;color: #f5f5f5;
+    font-weight: bold;font-size: 1rem;
+    padding: 10px 15px;transition: 0.7s;
+}
+button:hover{background-color:#242225;}
+
+/*===========HEADER=========*/
+
+#topo {
+    background-image: url("../img/background-top.jpg");
+    background-repeat: no-repeat; 
+    height: 100%;
+    
+}
+#topo .display-top {
+    background-color: rgba(0, 0, 0, 0.288);
+    padding-top:40px;
+    height: 100%;
+    width:100%;
+}
+#topo .display-top > .container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+    
+}
+#topo .container > .brand > a{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500; 
+}
+.container details{display: none;}
+nav.menu{
+    display: flex;
+    gap: 40px;
+}
+nav.menu a{
+    color: white;
+}
+nav.menu a:hover{
+    color: #9542f5;
+}
+
+/*===========HEADER CONTAINER DOIS=========*/
+
+#topo .display-top > .container:last-child{
+    
+    gap: 20px;
+    height: calc(700px - 114px);
+}
+
+#topo .box-texto-top{
+    max-width: 730px;
+    margin: -70px auto 0 auto;
+    color: white;
+}
+#topo .box-texto-top h2{
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 20px; 
+}
+#topo .box-texto-top p{
+    font-weight: 300;   
+}
+/*===========RESERVAR=========*/
+#reservar{
+    padding: 40px 0;
+    background-color: #40404409;
+}
+#reservar .container{
+    
+    padding: 70px 2%;
+}
+.container .formulario .form-wrap h2{
+    color:#404044;
+    font-family: sans-serif;
+    font-size: 2.0rem;
+    font-weight: 300;padding-bottom: 40px;
+}
+.container .formulario .form-wrap h3{
+    color:#404044;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-weight: 300;padding-bottom:20px;
+}
+.container .formulario .form-wrap{
+    margin-bottom: 100px;
+}
+.form-wrap .form-dados{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.form-wrap .form-dados label{
+    color:#404044;
+    display: block;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+.form-wrap .form-dados input{
+    width: 100%;
+    display: block;
+    padding: 17px 10px;
+    outline:none;
+    border:1px solid #40404456;
+}
+.form-wrap .form-dados input[type="date"]{
+    height: 51px;
+    font-size: 1.2rem;
+    color:#404044;
+}
+.form-wrap .form-dados select{
+    width: 100%;
+    height: 51px;
+    font-size: 1rem;
+    color:#404044;
+    outline:none;
+    border:1px solid #40404456;
+    padding-left: 10px;
+}
+.form-wrap .form-dados input::placeholder{
+    color: #404044;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+.form-wrap .box2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-wrap .box3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.form-wrap .box4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+/*============INSSAAGGRAM===========*/
+.instagram-wrap {
+    width: 100%;
+    display: flex;
+    padding: 40px 0;
+}
+.instagram-titulo h2{
+    text-align: center;
+    padding: 40px 0;
+    color: #a563f1;
+}
+.instagram-wrap .box-img{
+    width: 100%;
+    min-height: 200px;
+    display: block;
+    background-image: url('../img/instagram/bg-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+.box-img:nth-child(2){
+    background-image: url('../img/instagram/bg-02.jpg');
+}
+.box-img:nth-child(3){
+    background-image: url('../img/instagram/bg-03.jpg');
+}
+.box-img:nth-child(4){
+    background-image: url('../img/instagram/bg-04.jpg');
+}
+.box-img:nth-child(5){
+    background-image: url('../img/instagram/bg-05.jpg');
+}
+.instagram .box-img:hover > .display{
+    display: block;
+}
+.instagram .box-img .display{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    display: none;  
+    text-align: center;
+    padding: 70px 0;
+}
+.instagram .box-img .display .img{
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icons/instagram.png");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+/*============FOOTER===========*/
+.rodape{
+    width: 100%;
+    height:100%;
+    background-color:#30336b;
+    padding: 50px 0;
+}
+.rodape .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    justify-content: center;
+    gap: 10px;
+}
+.container .box-rodape{
+    max-width:250px;
+}
+.container .box-rodape:nth-child(2) > p,
+.container .box-rodape:nth-child(3) > p,
+.container .box-rodape:nth-child(4) > p{
+    margin-bottom: 12px;
+}
+.container .box-rodape h3{
+    color: rgba(228, 228, 228, 0.884);
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 20px 0;
+}
+.box-rodape p{
+    font-weight: 300;
+    font-size: 1rem;
+    color: rgba(228, 228, 228, 0.726)
+}
+.container .box-rodape:nth-child(4) input{
+    background-color: transparent;
+    border: 1px solid rgba(228, 228, 228, 0.726);
+    border-radius: 5px;
+    color: rgba(228, 228, 228, 0.726);
+    display: block;
+    padding: 15px 12px;
+    outline: none;
+    width: 100%;
+}
+.container .box-rodape:nth-child(4) input::placeholder{
+    color: rgba(228, 228, 228, 0.726);
+}
+.rodape  div:last-child{
+    
+    color:#ffffff;
+    font-size: .8rem;
+    font-family:"Poppins";
+    margin-top: 60px; 
+    text-align: center;
+}
+
+
+/*============MEDIA QUERY===========*/
+
+
+@media screen and (max-width:767px){
+
+    /*============HEADER CONTAINER DOIS==============*/
+    #topo .box-texto-top{
+        max-width: 530px;
+        margin: 0 auto;
+        color: white;
+    }
+    .container:last-child .box-formulario-top{
+        display: none;
+    }
+    #reservar .container {
+        max-width: 85%;
+    }
+    .form-wrap .form-dados{
+        grid-template-columns: 1fr;
+    }
+    .form-wrap .box2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .form-wrap .box3{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .form-wrap .box4{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:940px) {
+
+    /*============ Menu-Mobile=============*/
+    .container .menu{
+        display: none;
+    }
+    details.menu-mobile{
+        display: block;
+       
+    }
+    details.menu-mobile summary{
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/menu.png");
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-size: contain;
+        list-style: none;
+    }
+    details.menu-mobile .box-menu{
+        background-color: rgb(129, 74, 255);
+        padding: 12% 0 12% 0;
+        position: absolute;
+        width: 300px;
+        height: calc(100% + 50px);
+        left: 0;
+        top: 0;
+    }
+
+    details.menu-mobile .box-menu input{display: none;}
+    details.menu-mobile .box-menu a,
+    details.menu-mobile .box-menu label{
+        color: white;
+        display: block;
+        font-size: 1.3rem;
+        padding: 12px 0;
+        text-align: center;
+        transition:0.7s;
+    }
+    details.menu-mobile .box-menu a:hover{
+        background-color: rgb(91, 21, 255);
+    }
+    details.menu-mobile .box-menu label:hover{
+        background-color: rgb(66, 17, 182);
+    }
+    details.menu-mobile .box-menu label{
+        cursor: pointer;
+        font-family: "Open Sans";
+        
+    }
+    details.menu-mobile .submenu{
+        display: none;
+        background-color: #f8f8f8;
+        color: black;
+    }
+    details.menu-mobile .submenu a{
+        color: black;  
+        font-size: 1rem;
+        
+    }
+    details.menu-mobile .submenu a:hover{
+        color: white;
+    }
+    .trigger-input:checked + .submenu{
+        display: block;
+    }
+}

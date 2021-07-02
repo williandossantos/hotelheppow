@@ -1,0 +1,34 @@
+
+.sobre{
+    background-color: #22254407;
+}
+.sobre .container{
+    padding: 70px 2%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;    
+}
+.left{
+    max-width:450px
+}
+.left h2{
+    font-size: 1.7rem;
+    padding: 10px 0;
+}
+.right-box {
+    width: 450px;
+}
+.right-box img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:960px) {
+    .sobre .container{
+        flex-wrap: wrap; 
+    }
+}
